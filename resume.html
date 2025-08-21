@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wang Haotian – Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Resume 页面专属样式 ===== */
+    .resume-wrapper{
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .section-title{
+      font-size: 24px;
+      font-weight: 600;
+      margin: 40px 0 20px;
+      position: relative;
+      color: var(--accent);
+    }
+    .section-title::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 40px;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    /* 教育卡片 */
+    .edu-card{
+      background: var(--panel);
+      border-left: 4px solid var(--accent);
+      padding: 20px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+      margin-bottom: 24px;
+    }
+    .edu-card h3{ margin: 0 0 8px; font-size: 18px; }
+    .edu-card .meta{ font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+
+    /* 时间轴 */
+    .timeline{
+      position: relative;
+      padding-left: 28px;
+    }
+    .timeline::before{
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--muted);
+    }
+    .timeline-item{
+      position: relative;
+      margin-bottom: 30px;
+    }
+    .timeline-dot{
+      position: absolute;
+      left: -28px;
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .timeline-content h4{ margin: 0 0 6px; font-size: 17px; }
+    .timeline-content .date{ font-size: 13px; color: var(--muted); margin-bottom: 6px;}
+    .timeline-content p{ font-size: 14px; line-height: 1.6; margin: 0; }
+
+    /* 论文/竞赛列表 */
+    .publication-list li,
+    .award-list li{
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 侧边栏保持不变 -->
+    <aside class="sidebar">
+      <div class="logo">W</div>
+      <nav>
+        <a href="index.html">ABOUT ME</a>
+        <a href="resume.html" class="active">MY RESUME</a>
+        <a href="project.html">MY PROJECTS</a>
+        <a href="https://wht0909.github.io/" target="_blank">MY BLOG</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle">🌙</button>
+
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p class="copyright">Copyright © 2025 All rights reserved.</p>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main class="main">
+      <div class="content resume-wrapper">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-card">
+          <h3>Sichuan University · College of Biomedical Engineering</h3>
+          <p class="meta">Sep 2022 – Present</p>
+        </div>
+
+        <h2 class="section-title">Research & Projects</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Compound / Drug Toxicity Database Construction & Mining</h4>
+              <p class="date">Dec 2024 – Present | Second Responsible</p>
+              <p>
+                Built a comprehensive online toxicity database with MySQL & Flask; implemented multi-condition query,
+                pagination, CSV export and ML-based toxicity prediction. Collected and cleaned large-scale public data
+                for machine-learning-ready benchmarking.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>iAVP-RFVOT: Identify Antiviral Peptides by Random Forest Voting Machine Learning with Unified Manifold Learning Embedded Features</h4>
+              <p class="date">Published Jun 2025 | First Author, <em>Biochemistry</em></p>
+              <p>
+                Constructed a new benchmark dataset and developed an ensemble-learning antiviral-peptide predictor
+                outperforming SOTA. Deployed a Flask web server with responsive front-end for FASTA upload &
+                visualization.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-title">Publications</h2>
+        <ul class="publication-list">
+          <li>
+            <strong>Wang H</strong>, Li R, Yu Q, Jiang L, Luo X, Zou Q, Lv Z. iAVP-RFVOT: Identify Antiviral Peptides by Random Forest Voting Machine Learning with Unified Manifold Learning Embedded Features. <em>Biochemistry</em>. 2025 Jul 15;64(14):3137-3147. doi: 10.1021/acs.biochem.5c00237. Epub 2025 Jun 24. PMID: 40555408.
+          </li>
+          <li>
+            Li R, <strong>Wang H</strong>, Yu Q, Cai J, Jiang L, Luo X, Zou Q, Lv Z. AOPxSVM: A Support Vector Machine for Identifying Antioxidant Peptides Using a Block Substitution Matrix and Amino Acid Composition, Transformation, and Distribution Embeddings. <em>Foods</em>. 2025 Jun 6;14(12):2014. doi: 10.3390/foods14122014. PMID: 40565623; PMCID: PMC12192177.
+          </li>
+          <li>
+            Zheng, B., Li, R., <strong>Wang, H.</strong>, Wang, S., Peng, S., Li, M., Jiang, L., & Lv, Z. (2025). iACP-SEI: An Anticancer Peptide Identification Method Incorporating Sequence Evolutionary Information. <em>Journal of Data Science and Intelligent Systems</em>. https://doi.org/10.47852/bonviewJDSIS52024821
+          </li>
+        </ul>
+
+        <h2 class="section-title">Awards & Competitions</h2>
+        <ul class="award-list">
+          <li>16th National College Mathematics Competition (Non-Math A) – Provincial Second Prize</li>
+          <li>16th Lanqiao Cup Software Contest (C/C++ Group A) – Provincial Third Prize</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6f90f6b6b8.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
