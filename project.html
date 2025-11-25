@@ -13,6 +13,34 @@
       max-width: 950px;
       padding: 30px;
     }
+
+    /* 项目卡片额外样式 */
+    .project-icon {
+      font-size: 48px;
+      margin: 20px 0;
+      color: var(--accent);
+    }
+    
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      margin: 15px 0px;
+    }
+    
+    .tech-stack span {
+      font-size: 14px;
+      padding: 3px 10px;
+      border-radius: 12px;
+      background: rgba(0,0,0,0.05);
+      color: var(--muted);
+    }
+    
+    .dark .tech-stack span {
+      background: rgba(255,255,255,0.08);
+    }
+</style>
   </style>
 </head>
 <body>
@@ -37,45 +65,59 @@
     <main class="main">
       <div class="project-content">
         <h2>My Projects</h2>
-          <section class="cards">
-            <!-- Card 1
-             <article class="card">
-              <img src="./imgs/iAVP-RFVOT_Logo.png" alt="iAVP-RFVOT">
-              <h3>iAVP-RFVOT</h3>
-              <p>An antiviral peptide prediction model based on ensemble learning, published in <i>Biochemistry</i></p>
-              <a href="https://pubs.acs.org/doi/10.1021/acs.biochem.5c00237" target="_blank">View Article</a>
-            </article> -->
-            
+          <section class="cards">        
+            <!-- Card 1 -->
+            <article class="card">
+              <h3>
+                1.&nbsp;&nbsp;PaperFinding
+                <div class="tech-stack">
+                  <span>Python</span>
+                  <span>Flask</span>
+                  <span>Elasticsearch</span>
+                </div>
+              </h3>
+              <p>Biomedical literature retrieval system, featuring the built-in intelligent Q&A assistant Deepseek</p>
+              <a href="https://github.com/WHT0909/PaperFinding" target="_blank" style="color: var(--accent);">View Code</a>
+            </article>
+
             <!-- Card 2 -->
             <article class="card">
-              <img src="./imgs/PaperFinding_Logo.png" alt="PaperFinding">
-              <h3>PaperFinding</h3>
-              <p>Biomedical literature retrieval system, featuring the built-in intelligent Q&A assistant Deepseek</p>
-              <a href="https://github.com/WHT0909/PaperFinding" target="_blank">View Code</a>
+              <h3>
+                2.&nbsp;&nbsp;LungVision
+                <div class="tech-stack">
+                  <span>Python</span>
+                  <span>Image Processing</span>
+                </div>
+              </h3>
+              <p>Chest X-Ray image processing software, integrating 5 image enhancement and 5 image segmentation algorithms for detecting lesion areas</p>
+              <a href="https://github.com/wht0909/LungVision" target="_blank" style="color: var(--accent);">View Code</a>
             </article>
 
             <!-- Card 3 -->
             <article class="card">
-              <img src="./imgs/LungVision_Logo.png" alt="LungVision">
-              <h3>LungVision</h3>
-              <p>Chest X-Ray image processing software, integrating 5 image enhancement and 5 image segmentation algorithms for detecting lesion areas</p>
-              <a href="https://github.com/wht0909/LungVision" target="_blank">View Code</a>
+              <h3>
+                3.&nbsp;&nbsp;HaBaGa
+                <div class="tech-stack">
+                  <span>C / C++</span>
+                  <span>MFC</span>
+                </div>
+              </h3>
+              <p>Medical image processing tool developed using the MFC framework</p>
+              <a href="https://github.com/shangshulin/MyPhotoshop" target="_blank" style="color: var(--accent);">View Code</a>
             </article>
 
             <!-- Card 4 -->
             <article class="card">
-              <img src="./imgs/HaBaGa_Logo.png" alt="HaBaGa">
-              <h3>HaBaGa</h3>
-              <p>Medical image processing tool developed using the MFC framework</p>
-              <a href="https://github.com/shangshulin/MyPhotoshop" target="_blank">View Code</a>
-            </article>
-
-            <!-- Card 5 -->
-            <article class="card">
-              <img src="./imgs/TOXICS_Logo.png" alt="TOXICS">
-              <h3>TOXICS</h3>
+              <h3>
+                4.&nbsp;&nbsp;TOXICS
+                  <div class="tech-stack">
+                  <span>MySQL</span>
+                  <span>Machine Learning</span>
+                  <span>Web Design</span>
+                </div>
+              </h3>
               <p>Compound/Drug toxicology database system</p>
-              <a href="https://github.com/WHT0909/TOXICS-Webserver" target="_blank">View Code</a>
+              <a href="https://github.com/WHT0909/TOXICS-Webserver" target="_blank" style="color: var(--accent);">View Code</a>
             </article>
           </section>
       </div>

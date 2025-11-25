@@ -155,61 +155,44 @@ nav a.active, nav a:hover {
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-  margin-top: 40px;
+  flex-direction: column;
 }
 
 .card {
-  flex: 1 1 260px;          /* 最小 260px，空间允许时自动拉伸 */
-  max-width: 320px;
   background: var(--panel);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,.08);
-  transition: transform .3s, box-shadow .3s;
-  text-align: center;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 28px rgba(0,0,0,.12);
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+  padding: 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  margin-bottom: 24px;
+  border-left: 4px solid var(--accent);
+  width: 900px;
 }
 
 .card h3 {
-  margin: 20px 20px 8px;
-  font-size: 18px;
+  margin: 0;
+  font-size: 20px;
   font-weight: 600;
-  color: var(--accent);
+  letter-spacing: 0.2px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  /* align-content: center; */
+  gap: 15px;
 }
 
 .card p {
-  margin: 0 20px 20px;
-  font-size: 14px;
   color: var(--muted);
+  font-size: 16px;
   line-height: 1.5;
+  margin: 10px 0 16x;
+  max-width: 900px;
+  text-align: left;
 }
 
 .card a {
-  display: inline-block;
-  margin-bottom: 24px;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 13px;
-  letter-spacing: .5px;
-  color: var(--panel);
-  background: var(--accent);
+  font-size: 14px;
   text-decoration: none;
-  transition: opacity .3s;
-}
-
-.card a:hover {
-  opacity: .8;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
 }
