@@ -176,12 +176,11 @@ nav a.active, nav a:hover {
   text-align: left;
   display: flex;
   justify-content: space-between;
-  /* align-content: center; */
   gap: 15px;
 }
 
 .card p {
-  color: var(--muted);
+  color: var(--accent);
   font-size: 16px;
   line-height: 1.5;
   margin: 10px 0 16x;
